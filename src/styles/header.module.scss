@@ -1,0 +1,81 @@
+
+
+@import "./constants.scss";
+// *{
+//     margin: 0;
+//     padding: 0;
+// }
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    // margin-left: 1rem;
+    background-color: white;
+    height: 70px;
+    // position: fixed;
+  
+    // top: 20%;
+    // left: 0;
+    width: 1255px;
+    
+    div{
+        display: flex;
+        align-items: center;
+        .anc2{
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+        .anc2:hover{
+            text-decoration: none;
+            color: white;
+        }
+        button:hover{
+            background-color: black;
+        }
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0;
+        margin-left: 2rem;
+        li{
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-weight: 600;
+            font-size: 18px;
+            font-family: sans-serif;
+            // @include robotoMedium
+        }
+        img{
+           
+            // max-width: max-content;
+             background-color: $primary;
+            // padding: 0.3rem;
+            border-radius: 5px;
+            margin-left: 1rem;
+          
+            
+        }
+       @mixin button{
+            border: none;
+            outline: none;
+            @include robotoRegular;
+           background-color: $primary;
+     
+
+        }
+      button{
+        @include button;
+        margin-left: 1rem;
+      
+    
+    }
+    
+    }
+}
